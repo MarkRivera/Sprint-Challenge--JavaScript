@@ -42,6 +42,12 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explanation: 
 
+/* 
+
+  Javascript will begin looking for the variable internal within the nestedFunction's scope. However since it does not exist there, Javascript realizes that nestedFunction is a part of the outside function's scope and will move "one level up" to search for the variable. Since it does exist within myFunction's closure, it will access that variable. Javascript cannot move "one level down" as it is not allowed.
+
+*/
+
 
 const external = "I'm outside the function";
 
